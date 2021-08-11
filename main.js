@@ -40,6 +40,13 @@ function draw() {
             hp.play()
         }
     }
+    if (scoreRightWrist > 0.2) {
+        circle(rightWristX, rightWristY, 20);
+        hp.stop();
+        if(ppstatusplay == false) {
+            pp.play()
+        }
+    }
 }
 function modelLoaded() {
     console.log("Model is Loaded");
